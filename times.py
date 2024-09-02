@@ -1,23 +1,37 @@
 """
 times.py
 
-This module provides functions to get the current time in Japan and in a specified timezone.
-It also provides a function to calculate the time difference between Japan and a Country.
+This module provides functions to get the current time in Japan and in a
+specified
+timezone.
+It also provides a function to calculate the time difference between Japan
+and a
+Country.
 
 This module is intended to be used as a template for applying a linter. 
 Create a copy of this module and apply the linter to the copy. 
-Afterwards, compare the linted copy to this original file to understand the changes made by the linter.
+Afterwards, compare the linted copy to this original file to understand
+the
+changes made
+by the linter.
 
 Functions:
     get_current_time_in_japan: Returns the current time in Japan.
-    get_current_time_in_country: Returns the current time in a specified timezone.
-    calculate_time_difference: Returns the time difference between Japan and a Country in hours.
+    get_current_time_in_country: Returns the current time in a specified
+    timezone.
+    calculate_time_difference: Returns the time difference between
+    Japan and
+    a Country in
+    hours.
 """
 
 from datetime import datetime
 import pytz
 
 import pandas as pd
+
+def pandas_version():
+    print(pd.__version__)
 
 def get_current_time_in_japan():
     """
