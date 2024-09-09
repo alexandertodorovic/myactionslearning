@@ -1,2 +1,2 @@
 # myactionslearning
-myactionslearning environments
+my simple actionslearning environments
