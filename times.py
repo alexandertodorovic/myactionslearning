@@ -31,7 +31,12 @@ import pytz
 import pandas as pd
 
 def pandas_version():
+    """
+    Print pandas version.
 
+    Returns:
+        string: pandas version.
+    """
     print(pd.__version__)
 
 def get_current_time_in_japan():
@@ -83,3 +88,4 @@ if __name__ == '__main__':
     print(get_current_time_in_japan())
     print(get_current_time_in_country('Europe/Berlin'))
     print(f"Time difference in hours: {calculate_time_difference()}")
+
