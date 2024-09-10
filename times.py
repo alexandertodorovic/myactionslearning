@@ -50,7 +50,6 @@ def get_current_time_in_japan():
     japan_time = datetime.now(japan_tz)
     return japan_time
 
-
 def get_current_time_in_country(timezone):
     """
     Get the current time in a specified timezone.
