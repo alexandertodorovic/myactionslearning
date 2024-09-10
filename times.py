@@ -79,7 +79,6 @@ def calculate_time_difference():
 
     return time_difference_in_hours
 
-
 if __name__ == '__main__':
     print(get_current_time_in_japan())
     print(get_current_time_in_country('Europe/Berlin'))
