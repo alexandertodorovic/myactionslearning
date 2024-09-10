@@ -31,7 +31,12 @@ import pytz
 import pandas as pd
 
 def pandas_version():
+    """
+    Print pandas version.
 
+    Returns:
+        string: pandas version.
+    """
     print(pd.__version__)
 
 def get_current_time_in_japan():
