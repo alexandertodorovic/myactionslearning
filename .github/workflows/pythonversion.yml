@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-python@v5.2.0  # Set up Python using the setup-python action
         with:
           python-version: '3.12'  # Specify version of Python (e.g., 3.x)
+          check-latest: true
 
       - name: Verify Python version
         run: python --version  # Print out the installed Python version
