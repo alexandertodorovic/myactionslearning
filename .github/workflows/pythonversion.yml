@@ -1,0 +1,17 @@
+name: Manual Python Version Check
+
+on:
+  workflow_dispatch:  # This ensures the workflow only runs manually
+
+jobs:
+  check-python-version:
+    runs-on: ubuntu-latest  # Use Ubuntu as the runner
+
+    steps:
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5.2.0  # Set up Python using the setup-python action
+        with:
+          python-version: '3.12'  # Specify version of Python (e.g., 3.x)
+
+      - name: Verify Python version
+        run: python --version  # Print out the installed Python version
