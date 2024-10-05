@@ -1,5 +1,5 @@
-name: Publish Anonymization to Docker
-run-name: Publish container to anonymize text by @${{ github.actor }}
+name: Publish Times to Docker
+run-name: Publish container to show time difference DE<>JP text by @${{ github.actor }}
 on: workflow_dispatch
 #on: [push] 
 #on:
@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: ghcr.io/alexandertodorovic/publish-packages/anonymization
+          images: ghcr.io/alexandertodorovic/publish-packages/times
           tags: type=sha
       - name: Login to GHCR
         uses: docker/login-action@v3.3.0
