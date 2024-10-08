@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Run a command
         run: node --version
+      - name: Job summary
+        run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
